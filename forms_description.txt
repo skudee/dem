@@ -1,0 +1,58 @@
+=============================================
+ОПИСАНИЕ ФОРМ И ЭЛЕМЕНТОВ УПРАВЛЕНИЯ
+Проект: VELIKI
+=============================================
+
+---------------------------------------------
+Form1 — Авторизация
+---------------------------------------------
+txtLogin      | TextBox  | Поле ввода логина
+txtPassword   | TextBox  | Поле ввода пароля (скрыт *)
+btnLogin      | Button   | Кнопка "Войти"
+btnGuest      | Button   | Кнопка "Войти как гость"
+ds            | Label    | Надпись "Логин"
+label1        | Label    | Надпись "Пароль"
+label2        | Label    | Лишний label (текст "label2") — можно удалить
+lblError      | Label    | Надпись ошибки (красный цвет)
+
+---------------------------------------------
+ProductForm — Список товаров
+---------------------------------------------
+dataGridView1 | DataGridView | Таблица товаров
+pictureBox1   | PictureBox   | Логотип
+txtSearch     | TextBox      | Поле поиска
+cmbFilter     | ComboBox     | Фильтр по категории
+cmbSort       | ComboBox     | Сортировка
+btnAdd        | Button       | Кнопка "Добавить"
+btnEdit       | Button       | Кнопка "Редактировать"
+btnDelete     | Button       | Кнопка "Удалить"
+exitbutt      | Button       | Кнопка "Выход"
+label1        | Label        | Надпись "Веломагазин ВелосипедДрайв"
+button4       | Button       | Лишняя кнопка — нигде не используется, удалить
+
+---------------------------------------------
+ProductEditForm — Добавление/Редактирование товара
+---------------------------------------------
+txtArticle    | TextBox  | Поле "Артикул"
+txtName       | TextBox  | Поле "Название"
+txtPrice      | TextBox  | Поле "Цена"
+txtDiscount   | TextBox  | Поле "Скидка"
+txtAmount     | TextBox  | Поле "Количество"
+txtDescription| TextBox  | Поле "Описание"
+txtPhoto      | TextBox  | Поле "Фото"
+cmbCategory   | ComboBox | Выпадающий список категорий
+cmbProducer   | ComboBox | Выпадающий список производителей
+cmbProvider   | ComboBox | Выпадающий список поставщиков
+cmbUnit       | ComboBox | Выпадающий список единиц измерения
+btnSave       | Button   | Кнопка сохранения (Text = "button1" — исправить на "Сохранить")
+btnCancel     | Button   | Кнопка отмены (Text = "button2" — исправить на "Отмена")
+
+=============================================
+ЧТО НУЖНО ИСПРАВИТЬ
+=============================================
+1. Form1        — удалить label2 (текст "label2" виден на форме)
+2. ProductForm  — удалить button4 (нигде не используется)
+3. ProductEditForm — btnSave: изменить Text с "button1" на "Сохранить"
+4. ProductEditForm — btnCancel: изменить Text с "button2" на "Отмена"
+5. ProductEditForm — добавить Label подписи к каждому полю,
+                     чтобы пользователь знал что куда вводить

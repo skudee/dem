@@ -1,0 +1,71 @@
+ОЧИСТКА ТАБЛИЦ И АЙДИШНИКОВ
+
+USE "НАЗВАНИЕ БД";
+GO
+
+DELETE FROM dbo.ProductInOrder;
+DELETE FROM dbo.[Order];
+DELETE FROM dbo.Product;
+DELETE FROM dbo.[User];
+DELETE FROM dbo.PickUpPoint;
+DELETE FROM dbo.Category;
+DELETE FROM dbo.Producer;
+DELETE FROM dbo.Provider;
+DELETE FROM dbo.Unit;
+DELETE FROM dbo.Role;
+DELETE FROM dbo.OrderStatus;
+
+DBCC CHECKIDENT ('dbo.Category', RESEED, 0);
+DBCC CHECKIDENT ('dbo.Producer', RESEED, 0);
+DBCC CHECKIDENT ('dbo.Provider', RESEED, 0);
+DBCC CHECKIDENT ('dbo.Unit', RESEED, 0);
+DBCC CHECKIDENT ('dbo.Role', RESEED, 0);
+DBCC CHECKIDENT ('dbo.OrderStatus', RESEED, 0);
+DBCC CHECKIDENT ('dbo.PickUpPoint', RESEED, 0);
+DBCC CHECKIDENT ('dbo.Product', RESEED, 0);
+DBCC CHECKIDENT ('dbo.[User]', RESEED, 0);
+DBCC CHECKIDENT ('dbo.[Order]', RESEED, 0);
+DBCC CHECKIDENT ('dbo.ProductInOrder', RESEED, 0);
+GO
+
+
+=ПОИСКПОЗ( - СНАЧАЛА СКОПИРОВАТЬ 2 таблицы рядом поставить, первую строчку в первой табл, поставить ; и копировать вторую таблицу всю и нажать f4, потом ;0)
+
+="имяпапкиCjpg/"& *тут тыкнуть на соседнюю ячейку с числом jpg* - ЭТО в таблице ТОВАРЫ последний столбец
+
+CTRL+N - код писать
+
+ПОСЛЕ ER-ДИАГРАММЫ СДЕЛАТЬ СКРИПТ!!!!!!!!
+ПОСЛЕ ER-ДИАГРАММЫ СДЕЛАТЬ СКРИПТ!!!!!!!!
+ПОСЛЕ ER-ДИАГРАММЫ СДЕЛАТЬ СКРИПТ!!!!!!!!
+ПОСЛЕ ER-ДИАГРАММЫ СДЕЛАТЬ СКРИПТ!!!!!!!!
+ПОСЛЕ ER-ДИАГРАММЫ СДЕЛАТЬ СКРИПТ!!!!!!!!
+
+Потом сохранить в папку "1 модуль" там будет скрипт и pdf файл er диаграммы (через paint скриншот)
+
+
+
+МОДУЛЬ 2
+файл win forms.NET 
+NU GET ПАКЕТЫ ОДНОЙ ВЕРСИИ С ВЕРСИЕЙ NET 
+
+Microsoft.EntityFrameworkCore.SqlServer
+Microsoft.EntityFrameworkCore.Tools
+
+ПОДКЛЮЧЕНИЕ БД К ПРОЕКТУ Инструменты → Диспетчер пакетов NuGet → Консоль диспетчера пакетов:
+
+Scaffold-DbContext "Server=(localdb)\MSSQLLocalDB;Database=ShopDB;Trusted_Connection=True;TrustServerCertificate=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+
+
+Элементы формы входа:
+
+TextBox для логина → назови txtLogin
+TextBox для пароля → назови txtPassword (в свойствах поставь PasswordChar = *)
+Button войти → назови btnLogin
+Button войти как гость → назови btnGuest
+Label для логина, для пароля — названия не важны, просто подписи
+Label для ошибок → назови lblError (сделай текст пустым и цвет красным)
+
+
+
+
